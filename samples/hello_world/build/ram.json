@@ -1,0 +1,557 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "identifier": "drivers/console/uart_console.c/uart_console_dev",
+                  "name": "uart_console_dev",
+                  "size": 4
+                }
+              ],
+              "identifier": "drivers/console/uart_console.c",
+              "name": "uart_console.c",
+              "size": 4
+            }
+          ],
+          "identifier": "drivers/console",
+          "name": "console",
+          "size": 4
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "identifier": "drivers/clock_control/clock_control_nrf.c/data",
+                  "name": "data",
+                  "size": 80
+                },
+                {
+                  "identifier": "drivers/clock_control/clock_control_nrf.c/hfclk_users",
+                  "name": "hfclk_users",
+                  "size": 4
+                },
+                {
+                  "identifier": "drivers/clock_control/clock_control_nrf.c/__device_clock_nrf",
+                  "name": "__device_clock_nrf",
+                  "size": 16
+                }
+              ],
+              "identifier": "drivers/clock_control/clock_control_nrf.c",
+              "name": "clock_control_nrf.c",
+              "size": 100
+            }
+          ],
+          "identifier": "drivers/clock_control",
+          "name": "clock_control",
+          "size": 100
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "identifier": "drivers/timer/nrf_rtc_timer.c/last_count",
+                  "name": "last_count",
+                  "size": 4
+                }
+              ],
+              "identifier": "drivers/timer/nrf_rtc_timer.c",
+              "name": "nrf_rtc_timer.c",
+              "size": 4
+            },
+            {
+              "children": [
+                {
+                  "identifier": "drivers/timer/sys_clock_init.c/__device_sys_init_z_clock_driver_init0",
+                  "name": "__device_sys_init_z_clock_driver_init0",
+                  "size": 16
+                }
+              ],
+              "identifier": "drivers/timer/sys_clock_init.c",
+              "name": "sys_clock_init.c",
+              "size": 16
+            }
+          ],
+          "identifier": "drivers/timer",
+          "name": "timer",
+          "size": 20
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "identifier": "drivers/gpio/gpio_nrfx.c/gpio_nrfx_p0_data",
+                  "name": "gpio_nrfx_p0_data",
+                  "size": 28
+                },
+                {
+                  "identifier": "drivers/gpio/gpio_nrfx.c/gpio_nrfx_p1_data",
+                  "name": "gpio_nrfx_p1_data",
+                  "size": 28
+                },
+                {
+                  "identifier": "drivers/gpio/gpio_nrfx.c/gpiote_alloc_mask",
+                  "name": "gpiote_alloc_mask",
+                  "size": 4
+                },
+                {
+                  "identifier": "drivers/gpio/gpio_nrfx.c/__device_gpio_nrfx_p0",
+                  "name": "__device_gpio_nrfx_p0",
+                  "size": 16
+                },
+                {
+                  "identifier": "drivers/gpio/gpio_nrfx.c/__device_gpio_nrfx_p1",
+                  "name": "__device_gpio_nrfx_p1",
+                  "size": 16
+                }
+              ],
+              "identifier": "drivers/gpio/gpio_nrfx.c",
+              "name": "gpio_nrfx.c",
+              "size": 92
+            }
+          ],
+          "identifier": "drivers/gpio",
+          "name": "gpio",
+          "size": 92
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "identifier": "drivers/serial/uart_nrfx_uart.c/uart_nrfx_uart0_data",
+                  "name": "uart_nrfx_uart0_data",
+                  "size": 8
+                },
+                {
+                  "identifier": "drivers/serial/uart_nrfx_uart.c/__device_uart_nrfx_uart0",
+                  "name": "__device_uart_nrfx_uart0",
+                  "size": 16
+                }
+              ],
+              "identifier": "drivers/serial/uart_nrfx_uart.c",
+              "name": "uart_nrfx_uart.c",
+              "size": 24
+            },
+            {
+              "children": [
+                {
+                  "identifier": "drivers/serial/uart_nrfx_uarte.c/uarte_1_data",
+                  "name": "uarte_1_data",
+                  "size": 16
+                },
+                {
+                  "identifier": "drivers/serial/uart_nrfx_uarte.c/__device_uart_nrfx_uarte1",
+                  "name": "__device_uart_nrfx_uarte1",
+                  "size": 16
+                }
+              ],
+              "identifier": "drivers/serial/uart_nrfx_uarte.c",
+              "name": "uart_nrfx_uarte.c",
+              "size": 32
+            }
+          ],
+          "identifier": "drivers/serial",
+          "name": "serial",
+          "size": 56
+        }
+      ],
+      "identifier": "drivers",
+      "name": "drivers",
+      "size": 272
+    },
+    {
+      "identifier": ":/cli.10253",
+      "name": "cli.10253",
+      "size": 16
+    },
+    {
+      "identifier": ":/on.10252",
+      "name": "on.10252",
+      "size": 4
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "identifier": "modules/debug/segger/rtt/SEGGER_RTT.c/_acDownBuffer",
+                          "name": "_acDownBuffer",
+                          "size": 16
+                        },
+                        {
+                          "identifier": "modules/debug/segger/rtt/SEGGER_RTT.c/_acUpBuffer",
+                          "name": "_acUpBuffer",
+                          "size": 1024
+                        }
+                      ],
+                      "identifier": "modules/debug/segger/rtt/SEGGER_RTT.c",
+                      "name": "SEGGER_RTT.c",
+                      "size": 1040
+                    }
+                  ],
+                  "identifier": "modules/debug/segger/rtt",
+                  "name": "rtt",
+                  "size": 1040
+                }
+              ],
+              "identifier": "modules/debug/segger",
+              "name": "segger",
+              "size": 1040
+            }
+          ],
+          "identifier": "modules/debug",
+          "name": "debug",
+          "size": 1040
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "identifier": "modules/hal/nordic/nrfx/drivers/src/nrfx_clock.c/m_clock_cb",
+                                  "name": "m_clock_cb",
+                                  "size": 8
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/nrfx/drivers/src/nrfx_clock.c/nrfx_clock_irq_enabled",
+                                  "name": "nrfx_clock_irq_enabled",
+                                  "size": 1
+                                }
+                              ],
+                              "identifier": "modules/hal/nordic/nrfx/drivers/src/nrfx_clock.c",
+                              "name": "nrfx_clock.c",
+                              "size": 9
+                            },
+                            {
+                              "children": [
+                                {
+                                  "identifier": "modules/hal/nordic/nrfx/drivers/src/nrfx_power.c/m_pofwarn_handler",
+                                  "name": "m_pofwarn_handler",
+                                  "size": 4
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/nrfx/drivers/src/nrfx_power.c/m_sleepevt_handler",
+                                  "name": "m_sleepevt_handler",
+                                  "size": 4
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/nrfx/drivers/src/nrfx_power.c/m_usbevt_handler",
+                                  "name": "m_usbevt_handler",
+                                  "size": 4
+                                }
+                              ],
+                              "identifier": "modules/hal/nordic/nrfx/drivers/src/nrfx_power.c",
+                              "name": "nrfx_power.c",
+                              "size": 12
+                            }
+                          ],
+                          "identifier": "modules/hal/nordic/nrfx/drivers/src",
+                          "name": "src",
+                          "size": 21
+                        }
+                      ],
+                      "identifier": "modules/hal/nordic/nrfx/drivers",
+                      "name": "drivers",
+                      "size": 21
+                    }
+                  ],
+                  "identifier": "modules/hal/nordic/nrfx",
+                  "name": "nrfx",
+                  "size": 21
+                }
+              ],
+              "identifier": "modules/hal/nordic",
+              "name": "nordic",
+              "size": 21
+            }
+          ],
+          "identifier": "modules/hal",
+          "name": "hal",
+          "size": 21
+        }
+      ],
+      "identifier": "modules",
+      "name": "modules",
+      "size": 1061
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "identifier": "arch/arm/core/aarch32/cortex_m/mpu/arm_mpu.c/static_regions_num",
+                                  "name": "static_regions_num",
+                                  "size": 1
+                                }
+                              ],
+                              "identifier": "arch/arm/core/aarch32/cortex_m/mpu/arm_mpu.c",
+                              "name": "arm_mpu.c",
+                              "size": 1
+                            }
+                          ],
+                          "identifier": "arch/arm/core/aarch32/cortex_m/mpu",
+                          "name": "mpu",
+                          "size": 1
+                        }
+                      ],
+                      "identifier": "arch/arm/core/aarch32/cortex_m",
+                      "name": "cortex_m",
+                      "size": 1
+                    }
+                  ],
+                  "identifier": "arch/arm/core/aarch32",
+                  "name": "aarch32",
+                  "size": 1
+                }
+              ],
+              "identifier": "arch/arm/core",
+              "name": "core",
+              "size": 1
+            }
+          ],
+          "identifier": "arch/arm",
+          "name": "arm",
+          "size": 1
+        }
+      ],
+      "identifier": "arch",
+      "name": "arch",
+      "size": 1
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "identifier": "lib/libc/minimal/source/stdout/stdout_console.c/_stdout_hook",
+                              "name": "_stdout_hook",
+                              "size": 4
+                            }
+                          ],
+                          "identifier": "lib/libc/minimal/source/stdout/stdout_console.c",
+                          "name": "stdout_console.c",
+                          "size": 4
+                        }
+                      ],
+                      "identifier": "lib/libc/minimal/source/stdout",
+                      "name": "stdout",
+                      "size": 4
+                    }
+                  ],
+                  "identifier": "lib/libc/minimal/source",
+                  "name": "source",
+                  "size": 4
+                }
+              ],
+              "identifier": "lib/libc/minimal",
+              "name": "minimal",
+              "size": 4
+            }
+          ],
+          "identifier": "lib/libc",
+          "name": "libc",
+          "size": 4
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "identifier": "lib/os/fdtable.c/fdtable_lock",
+                  "name": "fdtable_lock",
+                  "size": 20
+                }
+              ],
+              "identifier": "lib/os/fdtable.c",
+              "name": "fdtable.c",
+              "size": 20
+            },
+            {
+              "children": [
+                {
+                  "identifier": "lib/os/printk.c/_char_out",
+                  "name": "_char_out",
+                  "size": 4
+                }
+              ],
+              "identifier": "lib/os/printk.c",
+              "name": "printk.c",
+              "size": 4
+            }
+          ],
+          "identifier": "lib/os",
+          "name": "os",
+          "size": 24
+        }
+      ],
+      "identifier": "lib",
+      "name": "lib",
+      "size": 28
+    },
+    {
+      "identifier": ":/gpio_initialized.9791",
+      "name": "gpio_initialized.9791",
+      "size": 1
+    },
+    {
+      "identifier": ":/poll_out_lock.9791",
+      "name": "poll_out_lock.9791",
+      "size": 4
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "identifier": "kernel/init.c/z_idle_stacks",
+              "name": "z_idle_stacks",
+              "size": 320
+            },
+            {
+              "identifier": "kernel/init.c/z_main_stack",
+              "name": "z_main_stack",
+              "size": 1024
+            },
+            {
+              "identifier": "kernel/init.c/z_sys_post_kernel",
+              "name": "z_sys_post_kernel",
+              "size": 1
+            }
+          ],
+          "identifier": "kernel/init.c",
+          "name": "init.c",
+          "size": 1345
+        },
+        {
+          "children": [
+            {
+              "identifier": "kernel/sched.c/pending_current",
+              "name": "pending_current",
+              "size": 4
+            },
+            {
+              "identifier": "kernel/sched.c/slice_max_prio",
+              "name": "slice_max_prio",
+              "size": 4
+            },
+            {
+              "identifier": "kernel/sched.c/slice_time",
+              "name": "slice_time",
+              "size": 4
+            }
+          ],
+          "identifier": "kernel/sched.c",
+          "name": "sched.c",
+          "size": 12
+        },
+        {
+          "children": [
+            {
+              "identifier": "kernel/timeout.c/announce_remaining",
+              "name": "announce_remaining",
+              "size": 4
+            },
+            {
+              "identifier": "kernel/timeout.c/curr_tick",
+              "name": "curr_tick",
+              "size": 8
+            },
+            {
+              "identifier": "kernel/timeout.c/timeout_list",
+              "name": "timeout_list",
+              "size": 8
+            }
+          ],
+          "identifier": "kernel/timeout.c",
+          "name": "timeout.c",
+          "size": 20
+        }
+      ],
+      "identifier": "kernel",
+      "name": "kernel",
+      "size": 1377
+    },
+    {
+      "identifier": ":/SystemCoreClock",
+      "name": "SystemCoreClock",
+      "size": 4
+    },
+    {
+      "identifier": ":/rtt_term_mutex",
+      "name": "rtt_term_mutex",
+      "size": 20
+    },
+    {
+      "identifier": ":/_kernel",
+      "name": "_kernel",
+      "size": 48
+    },
+    {
+      "identifier": ":/z_main_thread",
+      "name": "z_main_thread",
+      "size": 128
+    },
+    {
+      "identifier": ":/z_interrupt_stacks",
+      "name": "z_interrupt_stacks",
+      "size": 2048
+    },
+    {
+      "identifier": ":/z_idle_threads",
+      "name": "z_idle_threads",
+      "size": 128
+    },
+    {
+      "identifier": ":/_sw_isr_table",
+      "name": "_sw_isr_table",
+      "size": 384
+    },
+    {
+      "identifier": ":/_SEGGER_RTT",
+      "name": "_SEGGER_RTT",
+      "size": 168
+    }
+  ],
+  "identifier": ":",
+  "name": "root",
+  "size": 2953
+}

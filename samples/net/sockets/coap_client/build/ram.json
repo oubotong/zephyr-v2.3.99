@@ -1,0 +1,2928 @@
+{
+  "children": [
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "identifier": "subsys/net/ip/net_if.c/active_address_lifetime_timers",
+                      "name": "active_address_lifetime_timers",
+                      "size": 8
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_if.c/active_prefix_lifetime_timers",
+                      "name": "active_prefix_lifetime_timers",
+                      "size": 8
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_if.c/active_router_timers",
+                      "name": "active_router_timers",
+                      "size": 8
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_if.c/address_lifetime_timer",
+                      "name": "address_lifetime_timer",
+                      "size": 48
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_if.c/ipv6_addresses",
+                      "name": "ipv6_addresses",
+                      "size": 316
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_if.c/link_callbacks",
+                      "name": "link_callbacks",
+                      "size": 8
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_if.c/prefix_lifetime_timer",
+                      "name": "prefix_lifetime_timer",
+                      "size": 48
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_if.c/router_timer",
+                      "name": "router_timer",
+                      "size": 48
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_if.c/routers",
+                      "name": "routers",
+                      "size": 36
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_if.c/log_dynamic_net_if",
+                      "name": "log_dynamic_net_if",
+                      "size": 4
+                    }
+                  ],
+                  "identifier": "subsys/net/ip/net_if.c",
+                  "name": "net_if.c",
+                  "size": 532
+                },
+                {
+                  "children": [
+                    {
+                      "identifier": "subsys/net/ip/net_mgmt.c/net_mgmt_lock",
+                      "name": "net_mgmt_lock",
+                      "size": 24
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_mgmt.c/network_event",
+                      "name": "network_event",
+                      "size": 24
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_mgmt.c/event_callbacks",
+                      "name": "event_callbacks",
+                      "size": 8
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_mgmt.c/events",
+                      "name": "events",
+                      "size": 96
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_mgmt.c/global_event_mask",
+                      "name": "global_event_mask",
+                      "size": 4
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_mgmt.c/in_event",
+                      "name": "in_event",
+                      "size": 2
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_mgmt.c/mgmt_thread_data",
+                      "name": "mgmt_thread_data",
+                      "size": 184
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_mgmt.c/out_event",
+                      "name": "out_event",
+                      "size": 2
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_mgmt.c/log_dynamic_net_mgmt",
+                      "name": "log_dynamic_net_mgmt",
+                      "size": 4
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_mgmt.c/mgmt_stack",
+                      "name": "mgmt_stack",
+                      "size": 768
+                    }
+                  ],
+                  "identifier": "subsys/net/ip/net_mgmt.c",
+                  "name": "net_mgmt.c",
+                  "size": 1116
+                },
+                {
+                  "children": [
+                    {
+                      "identifier": "subsys/net/ip/net_context.c/contexts",
+                      "name": "contexts",
+                      "size": 1520
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_context.c/contexts_lock",
+                      "name": "contexts_lock",
+                      "size": 24
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_context.c/log_dynamic_net_ctx",
+                      "name": "log_dynamic_net_ctx",
+                      "size": 4
+                    }
+                  ],
+                  "identifier": "subsys/net/ip/net_context.c",
+                  "name": "net_context.c",
+                  "size": 1548
+                },
+                {
+                  "children": [
+                    {
+                      "identifier": "subsys/net/ip/net_pkt.c/rx_bufs",
+                      "name": "rx_bufs",
+                      "size": 44
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_pkt.c/net_buf_rx_bufs",
+                      "name": "net_buf_rx_bufs",
+                      "size": 1920
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_pkt.c/tx_bufs",
+                      "name": "tx_bufs",
+                      "size": 44
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_pkt.c/net_buf_tx_bufs",
+                      "name": "net_buf_tx_bufs",
+                      "size": 1920
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_pkt.c/net_buf_data_rx_bufs",
+                      "name": "net_buf_data_rx_bufs",
+                      "size": 10240
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_pkt.c/net_buf_data_tx_bufs",
+                      "name": "net_buf_data_tx_bufs",
+                      "size": 10240
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_pkt.c/_k_mem_slab_buf_tx_pkts",
+                      "name": "_k_mem_slab_buf_tx_pkts",
+                      "size": 1216
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_pkt.c/_k_mem_slab_buf_rx_pkts",
+                      "name": "_k_mem_slab_buf_rx_pkts",
+                      "size": 1216
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_pkt.c/rx_pkts",
+                      "name": "rx_pkts",
+                      "size": 28
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_pkt.c/log_dynamic_net_pkt",
+                      "name": "log_dynamic_net_pkt",
+                      "size": 4
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_pkt.c/tx_pkts",
+                      "name": "tx_pkts",
+                      "size": 28
+                    }
+                  ],
+                  "identifier": "subsys/net/ip/net_pkt.c",
+                  "name": "net_pkt.c",
+                  "size": 26900
+                },
+                {
+                  "children": [
+                    {
+                      "identifier": "subsys/net/ip/net_tc.c/rx_classes",
+                      "name": "rx_classes",
+                      "size": 224
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_tc.c/tx_classes",
+                      "name": "tx_classes",
+                      "size": 224
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_tc.c/rx_stack",
+                      "name": "rx_stack",
+                      "size": 1504
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_tc.c/tx_stack",
+                      "name": "tx_stack",
+                      "size": 1200
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_tc.c/log_dynamic_net_tc",
+                      "name": "log_dynamic_net_tc",
+                      "size": 4
+                    }
+                  ],
+                  "identifier": "subsys/net/ip/net_tc.c",
+                  "name": "net_tc.c",
+                  "size": 3156
+                },
+                {
+                  "children": [
+                    {
+                      "identifier": "subsys/net/ip/icmpv6.c/handlers",
+                      "name": "handlers",
+                      "size": 8
+                    },
+                    {
+                      "identifier": "subsys/net/ip/icmpv6.c/echo_request_handler",
+                      "name": "echo_request_handler",
+                      "size": 12
+                    },
+                    {
+                      "identifier": "subsys/net/ip/icmpv6.c/log_dynamic_net_icmpv6",
+                      "name": "log_dynamic_net_icmpv6",
+                      "size": 4
+                    }
+                  ],
+                  "identifier": "subsys/net/ip/icmpv6.c",
+                  "name": "icmpv6.c",
+                  "size": 24
+                },
+                {
+                  "children": [
+                    {
+                      "identifier": "subsys/net/ip/connection.c/conn_unused",
+                      "name": "conn_unused",
+                      "size": 8
+                    },
+                    {
+                      "identifier": "subsys/net/ip/connection.c/conn_used",
+                      "name": "conn_used",
+                      "size": 8
+                    },
+                    {
+                      "identifier": "subsys/net/ip/connection.c/conns",
+                      "name": "conns",
+                      "size": 256
+                    },
+                    {
+                      "identifier": "subsys/net/ip/connection.c/log_dynamic_net_conn",
+                      "name": "log_dynamic_net_conn",
+                      "size": 4
+                    }
+                  ],
+                  "identifier": "subsys/net/ip/connection.c",
+                  "name": "connection.c",
+                  "size": 276
+                },
+                {
+                  "children": [
+                    {
+                      "identifier": "subsys/net/ip/net_shell.c/iface_help_buffer",
+                      "name": "iface_help_buffer",
+                      "size": 28
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_shell.c/iface_index_buffer",
+                      "name": "iface_index_buffer",
+                      "size": 4
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_shell.c/nbr_address_buffer",
+                      "name": "nbr_address_buffer",
+                      "size": 320
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_shell.c/shell_for_ping",
+                      "name": "shell_for_ping",
+                      "size": 4
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_shell.c/ping6_handler",
+                      "name": "ping6_handler",
+                      "size": 12
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_shell.c/ping_timeout",
+                      "name": "ping_timeout",
+                      "size": 24
+                    },
+                    {
+                      "identifier": "subsys/net/ip/net_shell.c/log_dynamic_net_shell",
+                      "name": "log_dynamic_net_shell",
+                      "size": 4
+                    }
+                  ],
+                  "identifier": "subsys/net/ip/net_shell.c",
+                  "name": "net_shell.c",
+                  "size": 396
+                },
+                {
+                  "children": [
+                    {
+                      "identifier": "subsys/net/ip/nbr.c/log_dynamic_net_nbr",
+                      "name": "log_dynamic_net_nbr",
+                      "size": 4
+                    }
+                  ],
+                  "identifier": "subsys/net/ip/nbr.c",
+                  "name": "nbr.c",
+                  "size": 4
+                },
+                {
+                  "children": [
+                    {
+                      "identifier": "subsys/net/ip/udp.c/log_dynamic_net_udp",
+                      "name": "log_dynamic_net_udp",
+                      "size": 4
+                    }
+                  ],
+                  "identifier": "subsys/net/ip/udp.c",
+                  "name": "udp.c",
+                  "size": 4
+                },
+                {
+                  "children": [
+                    {
+                      "identifier": "subsys/net/ip/net_stats.c/log_dynamic_net_stats",
+                      "name": "log_dynamic_net_stats",
+                      "size": 4
+                    }
+                  ],
+                  "identifier": "subsys/net/ip/net_stats.c",
+                  "name": "net_stats.c",
+                  "size": 4
+                },
+                {
+                  "children": [
+                    {
+                      "identifier": "subsys/net/ip/net_core.c/log_dynamic_net_core",
+                      "name": "log_dynamic_net_core",
+                      "size": 4
+                    }
+                  ],
+                  "identifier": "subsys/net/ip/net_core.c",
+                  "name": "net_core.c",
+                  "size": 4
+                },
+                {
+                  "children": [
+                    {
+                      "identifier": "subsys/net/ip/ipv6.c/log_dynamic_net_ipv6",
+                      "name": "log_dynamic_net_ipv6",
+                      "size": 4
+                    }
+                  ],
+                  "identifier": "subsys/net/ip/ipv6.c",
+                  "name": "ipv6.c",
+                  "size": 4
+                },
+                {
+                  "children": [
+                    {
+                      "identifier": "subsys/net/ip/utils.c/log_dynamic_net_utils",
+                      "name": "log_dynamic_net_utils",
+                      "size": 4
+                    }
+                  ],
+                  "identifier": "subsys/net/ip/utils.c",
+                  "name": "utils.c",
+                  "size": 4
+                }
+              ],
+              "identifier": "subsys/net/ip",
+              "name": "ip",
+              "size": 33972
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "identifier": "subsys/net/lib/coap/coap.c/message_id",
+                          "name": "message_id",
+                          "size": 2
+                        },
+                        {
+                          "identifier": "subsys/net/lib/coap/coap.c/log_dynamic_net_coap",
+                          "name": "log_dynamic_net_coap",
+                          "size": 4
+                        }
+                      ],
+                      "identifier": "subsys/net/lib/coap/coap.c",
+                      "name": "coap.c",
+                      "size": 6
+                    }
+                  ],
+                  "identifier": "subsys/net/lib/coap",
+                  "name": "coap",
+                  "size": 6
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "identifier": "subsys/net/lib/config/init.c/waiter",
+                          "name": "waiter",
+                          "size": 24
+                        },
+                        {
+                          "identifier": "subsys/net/lib/config/init.c/counter",
+                          "name": "counter",
+                          "size": 24
+                        },
+                        {
+                          "identifier": "subsys/net/lib/config/init.c/laddr",
+                          "name": "laddr",
+                          "size": 16
+                        },
+                        {
+                          "identifier": "subsys/net/lib/config/init.c/mgmt6_cb",
+                          "name": "mgmt6_cb",
+                          "size": 20
+                        },
+                        {
+                          "identifier": "subsys/net/lib/config/init.c/mgmt_iface_cb",
+                          "name": "mgmt_iface_cb",
+                          "size": 20
+                        },
+                        {
+                          "identifier": "subsys/net/lib/config/init.c/services_flags",
+                          "name": "services_flags",
+                          "size": 4
+                        },
+                        {
+                          "identifier": "subsys/net/lib/config/init.c/log_dynamic_net_config",
+                          "name": "log_dynamic_net_config",
+                          "size": 4
+                        }
+                      ],
+                      "identifier": "subsys/net/lib/config/init.c",
+                      "name": "init.c",
+                      "size": 112
+                    }
+                  ],
+                  "identifier": "subsys/net/lib/config",
+                  "name": "config",
+                  "size": 112
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "identifier": "subsys/net/lib/conn_mgr/events_handler.c/iface_events_cb",
+                          "name": "iface_events_cb",
+                          "size": 20
+                        },
+                        {
+                          "identifier": "subsys/net/lib/conn_mgr/events_handler.c/ipv6_events_cb",
+                          "name": "ipv6_events_cb",
+                          "size": 20
+                        }
+                      ],
+                      "identifier": "subsys/net/lib/conn_mgr/events_handler.c",
+                      "name": "events_handler.c",
+                      "size": 40
+                    },
+                    {
+                      "children": [
+                        {
+                          "identifier": "subsys/net/lib/conn_mgr/conn_mgr.c/_k_thread_data_conn_mgr_thread",
+                          "name": "_k_thread_data_conn_mgr_thread",
+                          "size": 48
+                        },
+                        {
+                          "identifier": "subsys/net/lib/conn_mgr/conn_mgr.c/_k_thread_obj_conn_mgr_thread",
+                          "name": "_k_thread_obj_conn_mgr_thread",
+                          "size": 184
+                        },
+                        {
+                          "identifier": "subsys/net/lib/conn_mgr/conn_mgr.c/log_dynamic_conn_mgr",
+                          "name": "log_dynamic_conn_mgr",
+                          "size": 4
+                        },
+                        {
+                          "identifier": "subsys/net/lib/conn_mgr/conn_mgr.c/_k_thread_stack_conn_mgr_thread",
+                          "name": "_k_thread_stack_conn_mgr_thread",
+                          "size": 512
+                        },
+                        {
+                          "identifier": "subsys/net/lib/conn_mgr/conn_mgr.c/iface_states",
+                          "name": "iface_states",
+                          "size": 2
+                        }
+                      ],
+                      "identifier": "subsys/net/lib/conn_mgr/conn_mgr.c",
+                      "name": "conn_mgr.c",
+                      "size": 750
+                    }
+                  ],
+                  "identifier": "subsys/net/lib/conn_mgr",
+                  "name": "conn_mgr",
+                  "size": 790
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/alarm.c/timer_fired",
+                              "name": "timer_fired",
+                              "size": 1
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/alarm.c/log_dynamic_net_openthread_alarm",
+                              "name": "log_dynamic_net_openthread_alarm",
+                              "size": 4
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/alarm.c/ot_timer",
+                              "name": "ot_timer",
+                              "size": 56
+                            }
+                          ],
+                          "identifier": "subsys/net/lib/openthread/platform/alarm.c",
+                          "name": "alarm.c",
+                          "size": 61
+                        },
+                        {
+                          "children": [
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/radio.c/ack_frame",
+                              "name": "ack_frame",
+                              "size": 24
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/radio.c/ack_psdu",
+                              "name": "ack_psdu",
+                              "size": 3
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/radio.c/channel",
+                              "name": "channel",
+                              "size": 2
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/radio.c/energy_detected_value",
+                              "name": "energy_detected_value",
+                              "size": 2
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/radio.c/energy_detection_channel",
+                              "name": "energy_detection_channel",
+                              "size": 1
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/radio.c/energy_detection_time",
+                              "name": "energy_detection_time",
+                              "size": 2
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/radio.c/ot_work_q",
+                              "name": "ot_work_q",
+                              "size": 216
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/radio.c/promiscuous",
+                              "name": "promiscuous",
+                              "size": 1
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/radio.c/radio_api",
+                              "name": "radio_api",
+                              "size": 4
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/radio.c/radio_dev",
+                              "name": "radio_dev",
+                              "size": 4
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/radio.c/sState",
+                              "name": "sState",
+                              "size": 1
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/radio.c/sTransmitFrame",
+                              "name": "sTransmitFrame",
+                              "size": 24
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/radio.c/tx_payload",
+                              "name": "tx_payload",
+                              "size": 4
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/radio.c/tx_pkt",
+                              "name": "tx_pkt",
+                              "size": 4
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/radio.c/tx_power",
+                              "name": "tx_power",
+                              "size": 1
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/radio.c/tx_result",
+                              "name": "tx_result",
+                              "size": 1
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/radio.c/radio_sem",
+                              "name": "radio_sem",
+                              "size": 24
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/radio.c/tx_pkt_fifo",
+                              "name": "tx_pkt_fifo",
+                              "size": 28
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/radio.c/ot_task_stack",
+                              "name": "ot_task_stack",
+                              "size": 512
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/radio.c/pending_events",
+                              "name": "pending_events",
+                              "size": 4
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/radio.c/log_dynamic_net_otPlat_radio",
+                              "name": "log_dynamic_net_otPlat_radio",
+                              "size": 4
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/radio.c/rx_pkt_fifo",
+                              "name": "rx_pkt_fifo",
+                              "size": 28
+                            }
+                          ],
+                          "identifier": "subsys/net/lib/openthread/platform/radio.c",
+                          "name": "radio.c",
+                          "size": 894
+                        },
+                        {
+                          "children": [
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/shell.c/rx_buffer",
+                              "name": "rx_buffer",
+                              "size": 256
+                            },
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/shell.c/shell_p",
+                              "name": "shell_p",
+                              "size": 4
+                            }
+                          ],
+                          "identifier": "subsys/net/lib/openthread/platform/shell.c",
+                          "name": "shell.c",
+                          "size": 260
+                        },
+                        {
+                          "children": [
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/settings.c/log_dynamic_net_otPlat_settings",
+                              "name": "log_dynamic_net_otPlat_settings",
+                              "size": 4
+                            }
+                          ],
+                          "identifier": "subsys/net/lib/openthread/platform/settings.c",
+                          "name": "settings.c",
+                          "size": 4
+                        },
+                        {
+                          "children": [
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/entropy.c/log_dynamic_net_otPlat_entropy",
+                              "name": "log_dynamic_net_otPlat_entropy",
+                              "size": 4
+                            }
+                          ],
+                          "identifier": "subsys/net/lib/openthread/platform/entropy.c",
+                          "name": "entropy.c",
+                          "size": 4
+                        },
+                        {
+                          "children": [
+                            {
+                              "identifier": "subsys/net/lib/openthread/platform/logging.c/log_dynamic_net_openthread",
+                              "name": "log_dynamic_net_openthread",
+                              "size": 4
+                            }
+                          ],
+                          "identifier": "subsys/net/lib/openthread/platform/logging.c",
+                          "name": "logging.c",
+                          "size": 4
+                        }
+                      ],
+                      "identifier": "subsys/net/lib/openthread/platform",
+                      "name": "platform",
+                      "size": 1227
+                    }
+                  ],
+                  "identifier": "subsys/net/lib/openthread",
+                  "name": "openthread",
+                  "size": 1227
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "identifier": "subsys/net/lib/sockets/getaddrinfo.c/log_dynamic_net_sock_addr",
+                          "name": "log_dynamic_net_sock_addr",
+                          "size": 4
+                        }
+                      ],
+                      "identifier": "subsys/net/lib/sockets/getaddrinfo.c",
+                      "name": "getaddrinfo.c",
+                      "size": 4
+                    },
+                    {
+                      "children": [
+                        {
+                          "identifier": "subsys/net/lib/sockets/sockets.c/log_dynamic_net_sock",
+                          "name": "log_dynamic_net_sock",
+                          "size": 4
+                        }
+                      ],
+                      "identifier": "subsys/net/lib/sockets/sockets.c",
+                      "name": "sockets.c",
+                      "size": 4
+                    }
+                  ],
+                  "identifier": "subsys/net/lib/sockets",
+                  "name": "sockets",
+                  "size": 8
+                }
+              ],
+              "identifier": "subsys/net/lib",
+              "name": "lib",
+              "size": 2143
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "identifier": "subsys/net/l2/openthread/openthread.c/ip6_addr_cb",
+                          "name": "ip6_addr_cb",
+                          "size": 20
+                        },
+                        {
+                          "identifier": "subsys/net/l2/openthread/openthread.c/ll_addr",
+                          "name": "ll_addr",
+                          "size": 4
+                        },
+                        {
+                          "identifier": "subsys/net/l2/openthread/openthread.c/ot_thread_data",
+                          "name": "ot_thread_data",
+                          "size": 184
+                        },
+                        {
+                          "identifier": "subsys/net/l2/openthread/openthread.c/ot_tid",
+                          "name": "ot_tid",
+                          "size": 4
+                        },
+                        {
+                          "identifier": "subsys/net/l2/openthread/openthread.c/state_changed_cb",
+                          "name": "state_changed_cb",
+                          "size": 4
+                        },
+                        {
+                          "identifier": "subsys/net/l2/openthread/openthread.c/ot_stack_area",
+                          "name": "ot_stack_area",
+                          "size": 3072
+                        },
+                        {
+                          "identifier": "subsys/net/l2/openthread/openthread.c/ot_sem",
+                          "name": "ot_sem",
+                          "size": 24
+                        },
+                        {
+                          "identifier": "subsys/net/l2/openthread/openthread.c/log_dynamic_net_l2_openthread",
+                          "name": "log_dynamic_net_l2_openthread",
+                          "size": 4
+                        }
+                      ],
+                      "identifier": "subsys/net/l2/openthread/openthread.c",
+                      "name": "openthread.c",
+                      "size": 3316
+                    }
+                  ],
+                  "identifier": "subsys/net/l2/openthread",
+                  "name": "openthread",
+                  "size": 3316
+                }
+              ],
+              "identifier": "subsys/net/l2",
+              "name": "l2",
+              "size": 3316
+            },
+            {
+              "children": [
+                {
+                  "identifier": "subsys/net/buf.c/log_dynamic_net_buf",
+                  "name": "log_dynamic_net_buf",
+                  "size": 4
+                }
+              ],
+              "identifier": "subsys/net/buf.c",
+              "name": "buf.c",
+              "size": 4
+            }
+          ],
+          "identifier": "subsys/net",
+          "name": "net",
+          "size": 39435
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "identifier": "subsys/logging/log_core.c/backend_attached",
+                  "name": "backend_attached",
+                  "size": 1
+                },
+                {
+                  "identifier": "subsys/logging/log_core.c/buffered_cnt",
+                  "name": "buffered_cnt",
+                  "size": 4
+                },
+                {
+                  "identifier": "subsys/logging/log_core.c/dropped_cnt",
+                  "name": "dropped_cnt",
+                  "size": 4
+                },
+                {
+                  "identifier": "subsys/logging/log_core.c/initialized",
+                  "name": "initialized",
+                  "size": 4
+                },
+                {
+                  "identifier": "subsys/logging/log_core.c/list",
+                  "name": "list",
+                  "size": 8
+                },
+                {
+                  "identifier": "subsys/logging/log_core.c/log_process_thread_timer",
+                  "name": "log_process_thread_timer",
+                  "size": 56
+                },
+                {
+                  "identifier": "subsys/logging/log_core.c/panic_mode",
+                  "name": "panic_mode",
+                  "size": 1
+                },
+                {
+                  "identifier": "subsys/logging/log_core.c/proc_tid",
+                  "name": "proc_tid",
+                  "size": 4
+                },
+                {
+                  "identifier": "subsys/logging/log_core.c/timestamp_func",
+                  "name": "timestamp_func",
+                  "size": 4
+                },
+                {
+                  "identifier": "subsys/logging/log_core.c/log_strdup_pool_buf",
+                  "name": "log_strdup_pool_buf",
+                  "size": 208
+                },
+                {
+                  "identifier": "subsys/logging/log_core.c/log_process_thread_sem",
+                  "name": "log_process_thread_sem",
+                  "size": 24
+                },
+                {
+                  "identifier": "subsys/logging/log_core.c/log_dynamic_log",
+                  "name": "log_dynamic_log",
+                  "size": 4
+                },
+                {
+                  "identifier": "subsys/logging/log_core.c/logging_thread",
+                  "name": "logging_thread",
+                  "size": 184
+                },
+                {
+                  "identifier": "subsys/logging/log_core.c/logging_stack",
+                  "name": "logging_stack",
+                  "size": 768
+                },
+                {
+                  "identifier": "subsys/logging/log_core.c/log_strdup_pool",
+                  "name": "log_strdup_pool",
+                  "size": 28
+                }
+              ],
+              "identifier": "subsys/logging/log_core.c",
+              "name": "log_core.c",
+              "size": 1302
+            },
+            {
+              "children": [
+                {
+                  "identifier": "subsys/logging/log_backend_rtt.c/panic_mode",
+                  "name": "panic_mode",
+                  "size": 1
+                },
+                {
+                  "identifier": "subsys/logging/log_backend_rtt.c/backend_cb_log_backend_rtt",
+                  "name": "backend_cb_log_backend_rtt",
+                  "size": 8
+                },
+                {
+                  "identifier": "subsys/logging/log_backend_rtt.c/char_buf",
+                  "name": "char_buf",
+                  "size": 16
+                },
+                {
+                  "identifier": "subsys/logging/log_backend_rtt.c/host_present",
+                  "name": "host_present",
+                  "size": 1
+                },
+                {
+                  "identifier": "subsys/logging/log_backend_rtt.c/log_output_rtt_control_block",
+                  "name": "log_output_rtt_control_block",
+                  "size": 12
+                }
+              ],
+              "identifier": "subsys/logging/log_backend_rtt.c",
+              "name": "log_backend_rtt.c",
+              "size": 38
+            },
+            {
+              "children": [
+                {
+                  "identifier": "subsys/logging/log_msg.c/log_msg_pool_buf",
+                  "name": "log_msg_pool_buf",
+                  "size": 1024
+                },
+                {
+                  "identifier": "subsys/logging/log_msg.c/log_msg_pool",
+                  "name": "log_msg_pool",
+                  "size": 28
+                }
+              ],
+              "identifier": "subsys/logging/log_msg.c",
+              "name": "log_msg.c",
+              "size": 1052
+            },
+            {
+              "children": [
+                {
+                  "identifier": "subsys/logging/log_output.c/freq",
+                  "name": "freq",
+                  "size": 4
+                },
+                {
+                  "identifier": "subsys/logging/log_output.c/timestamp_div",
+                  "name": "timestamp_div",
+                  "size": 4
+                }
+              ],
+              "identifier": "subsys/logging/log_output.c",
+              "name": "log_output.c",
+              "size": 8
+            }
+          ],
+          "identifier": "subsys/logging",
+          "name": "logging",
+          "size": 2400
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "identifier": "subsys/shell/shell_uart.c/_k_fifo_buf_shell_uart_msgq",
+                  "name": "_k_fifo_buf_shell_uart_msgq",
+                  "size": 80
+                },
+                {
+                  "identifier": "subsys/shell/shell_uart.c/backend_cb_shell_uart_backend",
+                  "name": "backend_cb_shell_uart_backend",
+                  "size": 8
+                },
+                {
+                  "identifier": "subsys/shell/shell_uart.c/shell_uart_ctx",
+                  "name": "shell_uart_ctx",
+                  "size": 772
+                },
+                {
+                  "identifier": "subsys/shell/shell_uart.c/shell_uart_history",
+                  "name": "shell_uart_history",
+                  "size": 16
+                },
+                {
+                  "identifier": "subsys/shell/shell_uart.c/shell_uart_stats",
+                  "name": "shell_uart_stats",
+                  "size": 4
+                },
+                {
+                  "identifier": "subsys/shell/shell_uart.c/shell_uart_thread",
+                  "name": "shell_uart_thread",
+                  "size": 184
+                },
+                {
+                  "identifier": "subsys/shell/shell_uart.c/shell_uart_stack",
+                  "name": "shell_uart_stack",
+                  "size": 3072
+                },
+                {
+                  "identifier": "subsys/shell/shell_uart.c/_ring_buffer_data_shell_transport_uart_rx_ringbuf",
+                  "name": "_ring_buffer_data_shell_transport_uart_rx_ringbuf",
+                  "size": 64
+                },
+                {
+                  "identifier": "subsys/shell/shell_uart.c/_ring_buffer_data_shell_transport_uart_tx_ringbuf",
+                  "name": "_ring_buffer_data_shell_transport_uart_tx_ringbuf",
+                  "size": 8
+                },
+                {
+                  "identifier": "subsys/shell/shell_uart.c/shell_transport_uart_ctrl_blk",
+                  "name": "shell_transport_uart_ctrl_blk",
+                  "size": 20
+                },
+                {
+                  "identifier": "subsys/shell/shell_uart.c/shell_uart_control_block",
+                  "name": "shell_uart_control_block",
+                  "size": 8
+                },
+                {
+                  "identifier": "subsys/shell/shell_uart.c/shell_uart_log_output_control_block",
+                  "name": "shell_uart_log_output_control_block",
+                  "size": 12
+                },
+                {
+                  "identifier": "subsys/shell/shell_uart.c/shell_uart_out_buffer",
+                  "name": "shell_uart_out_buffer",
+                  "size": 30
+                },
+                {
+                  "identifier": "subsys/shell/shell_uart.c/shell_uart_fprintf_shell_fprintf_ctx",
+                  "name": "shell_uart_fprintf_shell_fprintf_ctx",
+                  "size": 8
+                },
+                {
+                  "identifier": "subsys/shell/shell_uart.c/shell_uart_history_ring_buf",
+                  "name": "shell_uart_history_ring_buf",
+                  "size": 28
+                },
+                {
+                  "identifier": "subsys/shell/shell_uart.c/shell_uart_history_ring_buf_data",
+                  "name": "shell_uart_history_ring_buf_data",
+                  "size": 512
+                },
+                {
+                  "identifier": "subsys/shell/shell_uart.c/shell_transport_uart",
+                  "name": "shell_transport_uart",
+                  "size": 8
+                },
+                {
+                  "identifier": "subsys/shell/shell_uart.c/log_dynamic_shell_shell_uart",
+                  "name": "log_dynamic_shell_shell_uart",
+                  "size": 4
+                },
+                {
+                  "identifier": "subsys/shell/shell_uart.c/shell_transport_uart_tx_ringbuf",
+                  "name": "shell_transport_uart_tx_ringbuf",
+                  "size": 28
+                },
+                {
+                  "identifier": "subsys/shell/shell_uart.c/shell_uart_msgq",
+                  "name": "shell_uart_msgq",
+                  "size": 44
+                },
+                {
+                  "identifier": "subsys/shell/shell_uart.c/shell_transport_uart_rx_ringbuf",
+                  "name": "shell_transport_uart_rx_ringbuf",
+                  "size": 28
+                },
+                {
+                  "identifier": "subsys/shell/shell_uart.c/log_dynamic_shell_uart",
+                  "name": "log_dynamic_shell_uart",
+                  "size": 4
+                }
+              ],
+              "identifier": "subsys/shell/shell_uart.c",
+              "name": "shell_uart.c",
+              "size": 4942
+            }
+          ],
+          "identifier": "subsys/shell",
+          "name": "shell",
+          "size": 4942
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "identifier": "subsys/settings/src/settings_nvs.c/settings_nvs_itf",
+                      "name": "settings_nvs_itf",
+                      "size": 16
+                    }
+                  ],
+                  "identifier": "subsys/settings/src/settings_nvs.c",
+                  "name": "settings_nvs.c",
+                  "size": 16
+                },
+                {
+                  "children": [
+                    {
+                      "identifier": "subsys/settings/src/settings.c/settings_lock",
+                      "name": "settings_lock",
+                      "size": 20
+                    },
+                    {
+                      "identifier": "subsys/settings/src/settings.c/log_dynamic_settings",
+                      "name": "log_dynamic_settings",
+                      "size": 4
+                    }
+                  ],
+                  "identifier": "subsys/settings/src/settings.c",
+                  "name": "settings.c",
+                  "size": 24
+                },
+                {
+                  "children": [
+                    {
+                      "identifier": "subsys/settings/src/settings_init.c/settings_subsys_initialized",
+                      "name": "settings_subsys_initialized",
+                      "size": 1
+                    }
+                  ],
+                  "identifier": "subsys/settings/src/settings_init.c",
+                  "name": "settings_init.c",
+                  "size": 1
+                }
+              ],
+              "identifier": "subsys/settings/src",
+              "name": "src",
+              "size": 41
+            }
+          ],
+          "identifier": "subsys/settings",
+          "name": "settings",
+          "size": 41
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "identifier": "subsys/random/rand32_entropy_device.c/entropy_driver",
+                  "name": "entropy_driver",
+                  "size": 4
+                }
+              ],
+              "identifier": "subsys/random/rand32_entropy_device.c",
+              "name": "rand32_entropy_device.c",
+              "size": 4
+            }
+          ],
+          "identifier": "subsys/random",
+          "name": "random",
+          "size": 4
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "identifier": "subsys/fs/nvs/nvs.c/log_dynamic_fs_nvs",
+                      "name": "log_dynamic_fs_nvs",
+                      "size": 4
+                    }
+                  ],
+                  "identifier": "subsys/fs/nvs/nvs.c",
+                  "name": "nvs.c",
+                  "size": 4
+                }
+              ],
+              "identifier": "subsys/fs/nvs",
+              "name": "nvs",
+              "size": 4
+            }
+          ],
+          "identifier": "subsys/fs",
+          "name": "fs",
+          "size": 4
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "identifier": "subsys/power/power.c/log_dynamic_power",
+                  "name": "log_dynamic_power",
+                  "size": 4
+                }
+              ],
+              "identifier": "subsys/power/power.c",
+              "name": "power.c",
+              "size": 4
+            }
+          ],
+          "identifier": "subsys/power",
+          "name": "power",
+          "size": 4
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "identifier": "subsys/storage/flash_map/flash_map_default.c/flash_map",
+                      "name": "flash_map",
+                      "size": 4
+                    }
+                  ],
+                  "identifier": "subsys/storage/flash_map/flash_map_default.c",
+                  "name": "flash_map_default.c",
+                  "size": 4
+                }
+              ],
+              "identifier": "subsys/storage/flash_map",
+              "name": "flash_map",
+              "size": 4
+            }
+          ],
+          "identifier": "subsys/storage",
+          "name": "storage",
+          "size": 4
+        }
+      ],
+      "identifier": "subsys",
+      "name": "subsys",
+      "size": 46834
+    },
+    {
+      "identifier": ":/default_settings_nvs.9987",
+      "name": "default_settings_nvs.9987",
+      "size": 64
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "identifier": "drivers/console/uart_console.c/uart_console_dev",
+                  "name": "uart_console_dev",
+                  "size": 4
+                }
+              ],
+              "identifier": "drivers/console/uart_console.c",
+              "name": "uart_console.c",
+              "size": 4
+            }
+          ],
+          "identifier": "drivers/console",
+          "name": "console",
+          "size": 4
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "identifier": "drivers/clock_control/clock_control_nrf.c/data",
+                  "name": "data",
+                  "size": 88
+                },
+                {
+                  "identifier": "drivers/clock_control/clock_control_nrf.c/hf_start_tstamp",
+                  "name": "hf_start_tstamp",
+                  "size": 8
+                },
+                {
+                  "identifier": "drivers/clock_control/clock_control_nrf.c/hf_stop_tstamp",
+                  "name": "hf_stop_tstamp",
+                  "size": 8
+                },
+                {
+                  "identifier": "drivers/clock_control/clock_control_nrf.c/hfclk_users",
+                  "name": "hfclk_users",
+                  "size": 4
+                },
+                {
+                  "identifier": "drivers/clock_control/clock_control_nrf.c/__device_clock_nrf",
+                  "name": "__device_clock_nrf",
+                  "size": 16
+                },
+                {
+                  "identifier": "drivers/clock_control/clock_control_nrf.c/log_dynamic_clock_control",
+                  "name": "log_dynamic_clock_control",
+                  "size": 4
+                }
+              ],
+              "identifier": "drivers/clock_control/clock_control_nrf.c",
+              "name": "clock_control_nrf.c",
+              "size": 128
+            }
+          ],
+          "identifier": "drivers/clock_control",
+          "name": "clock_control",
+          "size": 128
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "identifier": "drivers/ieee802154/ieee802154_nrf5.c/__net_if_nrf5_154_radio_0",
+                  "name": "__net_if_nrf5_154_radio_0",
+                  "size": 96
+                },
+                {
+                  "identifier": "drivers/ieee802154/ieee802154_nrf5.c/__net_if_dev_nrf5_154_radio_0",
+                  "name": "__net_if_dev_nrf5_154_radio_0",
+                  "size": 28
+                },
+                {
+                  "identifier": "drivers/ieee802154/ieee802154_nrf5.c/__device_nrf5_154_radio",
+                  "name": "__device_nrf5_154_radio",
+                  "size": 16
+                },
+                {
+                  "identifier": "drivers/ieee802154/ieee802154_nrf5.c/_net_l2_data_nrf5_154_radio0",
+                  "name": "_net_l2_data_nrf5_154_radio0",
+                  "size": 76
+                },
+                {
+                  "identifier": "drivers/ieee802154/ieee802154_nrf5.c/nrf5_data",
+                  "name": "nrf5_data",
+                  "size": 1368
+                },
+                {
+                  "identifier": "drivers/ieee802154/ieee802154_nrf5.c/nrf5_radio_api",
+                  "name": "nrf5_radio_api",
+                  "size": 44
+                },
+                {
+                  "identifier": "drivers/ieee802154/ieee802154_nrf5.c/log_dynamic_ieee802154_nrf5",
+                  "name": "log_dynamic_ieee802154_nrf5",
+                  "size": 4
+                }
+              ],
+              "identifier": "drivers/ieee802154/ieee802154_nrf5.c",
+              "name": "ieee802154_nrf5.c",
+              "size": 1632
+            }
+          ],
+          "identifier": "drivers/ieee802154",
+          "name": "ieee802154",
+          "size": 1632
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "identifier": "drivers/timer/nrf_rtc_timer.c/last_count",
+                  "name": "last_count",
+                  "size": 4
+                }
+              ],
+              "identifier": "drivers/timer/nrf_rtc_timer.c",
+              "name": "nrf_rtc_timer.c",
+              "size": 4
+            },
+            {
+              "children": [
+                {
+                  "identifier": "drivers/timer/sys_clock_init.c/__device_sys_init_z_clock_driver_init0",
+                  "name": "__device_sys_init_z_clock_driver_init0",
+                  "size": 16
+                }
+              ],
+              "identifier": "drivers/timer/sys_clock_init.c",
+              "name": "sys_clock_init.c",
+              "size": 16
+            }
+          ],
+          "identifier": "drivers/timer",
+          "name": "timer",
+          "size": 20
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "identifier": "drivers/gpio/gpio_nrfx.c/gpio_nrfx_p0_data",
+                  "name": "gpio_nrfx_p0_data",
+                  "size": 28
+                },
+                {
+                  "identifier": "drivers/gpio/gpio_nrfx.c/gpio_nrfx_p1_data",
+                  "name": "gpio_nrfx_p1_data",
+                  "size": 28
+                },
+                {
+                  "identifier": "drivers/gpio/gpio_nrfx.c/gpiote_alloc_mask",
+                  "name": "gpiote_alloc_mask",
+                  "size": 4
+                },
+                {
+                  "identifier": "drivers/gpio/gpio_nrfx.c/__device_gpio_nrfx_p0",
+                  "name": "__device_gpio_nrfx_p0",
+                  "size": 16
+                },
+                {
+                  "identifier": "drivers/gpio/gpio_nrfx.c/__device_gpio_nrfx_p1",
+                  "name": "__device_gpio_nrfx_p1",
+                  "size": 16
+                }
+              ],
+              "identifier": "drivers/gpio/gpio_nrfx.c",
+              "name": "gpio_nrfx.c",
+              "size": 92
+            }
+          ],
+          "identifier": "drivers/gpio",
+          "name": "gpio",
+          "size": 92
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "identifier": "drivers/flash/soc_flash_nrf.c/dev_layout",
+                  "name": "dev_layout",
+                  "size": 8
+                },
+                {
+                  "identifier": "drivers/flash/soc_flash_nrf.c/sem_lock",
+                  "name": "sem_lock",
+                  "size": 24
+                },
+                {
+                  "identifier": "drivers/flash/soc_flash_nrf.c/__device_nrf_flash",
+                  "name": "__device_nrf_flash",
+                  "size": 16
+                }
+              ],
+              "identifier": "drivers/flash/soc_flash_nrf.c",
+              "name": "soc_flash_nrf.c",
+              "size": 48
+            },
+            {
+              "children": [
+                {
+                  "identifier": "drivers/flash/flash_shell.c/test_arr",
+                  "name": "test_arr",
+                  "size": 4096
+                }
+              ],
+              "identifier": "drivers/flash/flash_shell.c",
+              "name": "flash_shell.c",
+              "size": 4096
+            }
+          ],
+          "identifier": "drivers/flash",
+          "name": "flash",
+          "size": 4144
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "identifier": "drivers/serial/uart_nrfx_uart.c/disable_tx_irq",
+                  "name": "disable_tx_irq",
+                  "size": 1
+                },
+                {
+                  "identifier": "drivers/serial/uart_nrfx_uart.c/irq_callback",
+                  "name": "irq_callback",
+                  "size": 4
+                },
+                {
+                  "identifier": "drivers/serial/uart_nrfx_uart.c/irq_cb_data",
+                  "name": "irq_cb_data",
+                  "size": 4
+                },
+                {
+                  "identifier": "drivers/serial/uart_nrfx_uart.c/uart_sw_event_txdrdy",
+                  "name": "uart_sw_event_txdrdy",
+                  "size": 1
+                },
+                {
+                  "identifier": "drivers/serial/uart_nrfx_uart.c/uart_nrfx_uart0_data",
+                  "name": "uart_nrfx_uart0_data",
+                  "size": 8
+                },
+                {
+                  "identifier": "drivers/serial/uart_nrfx_uart.c/__device_uart_nrfx_uart0",
+                  "name": "__device_uart_nrfx_uart0",
+                  "size": 16
+                }
+              ],
+              "identifier": "drivers/serial/uart_nrfx_uart.c",
+              "name": "uart_nrfx_uart.c",
+              "size": 34
+            },
+            {
+              "children": [
+                {
+                  "identifier": "drivers/serial/uart_nrfx_uarte.c/uarte1_tx_buffer",
+                  "name": "uarte1_tx_buffer",
+                  "size": 32
+                },
+                {
+                  "identifier": "drivers/serial/uart_nrfx_uarte.c/uarte1_int_driven",
+                  "name": "uarte1_int_driven",
+                  "size": 16
+                },
+                {
+                  "identifier": "drivers/serial/uart_nrfx_uarte.c/uarte_1_data",
+                  "name": "uarte_1_data",
+                  "size": 20
+                },
+                {
+                  "identifier": "drivers/serial/uart_nrfx_uarte.c/__device_uart_nrfx_uarte1",
+                  "name": "__device_uart_nrfx_uarte1",
+                  "size": 16
+                },
+                {
+                  "identifier": "drivers/serial/uart_nrfx_uarte.c/log_dynamic_uart_nrfx_uarte",
+                  "name": "log_dynamic_uart_nrfx_uarte",
+                  "size": 4
+                }
+              ],
+              "identifier": "drivers/serial/uart_nrfx_uarte.c",
+              "name": "uart_nrfx_uarte.c",
+              "size": 88
+            }
+          ],
+          "identifier": "drivers/serial",
+          "name": "serial",
+          "size": 122
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "identifier": "drivers/entropy/entropy_nrf5.c/entropy_nrf5_data",
+                  "name": "entropy_nrf5_data",
+                  "size": 84
+                },
+                {
+                  "identifier": "drivers/entropy/entropy_nrf5.c/__device_entropy_nrf5",
+                  "name": "__device_entropy_nrf5",
+                  "size": 16
+                }
+              ],
+              "identifier": "drivers/entropy/entropy_nrf5.c",
+              "name": "entropy_nrf5.c",
+              "size": 100
+            }
+          ],
+          "identifier": "drivers/entropy",
+          "name": "entropy",
+          "size": 100
+        }
+      ],
+      "identifier": "drivers",
+      "name": "drivers",
+      "size": 6242
+    },
+    {
+      "identifier": ":/cli.10711",
+      "name": "cli.10711",
+      "size": 16
+    },
+    {
+      "identifier": ":/on.10710",
+      "name": "on.10710",
+      "size": 4
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "identifier": "modules/debug/segger/rtt/SEGGER_RTT.c/_acDownBuffer",
+                          "name": "_acDownBuffer",
+                          "size": 16
+                        },
+                        {
+                          "identifier": "modules/debug/segger/rtt/SEGGER_RTT.c/_acUpBuffer",
+                          "name": "_acUpBuffer",
+                          "size": 1024
+                        }
+                      ],
+                      "identifier": "modules/debug/segger/rtt/SEGGER_RTT.c",
+                      "name": "SEGGER_RTT.c",
+                      "size": 1040
+                    }
+                  ],
+                  "identifier": "modules/debug/segger/rtt",
+                  "name": "rtt",
+                  "size": 1040
+                }
+              ],
+              "identifier": "modules/debug/segger",
+              "name": "segger",
+              "size": 1040
+            }
+          ],
+          "identifier": "modules/debug",
+          "name": "debug",
+          "size": 1040
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/nrf_802154_core.c/m_ed_result",
+                              "name": "m_ed_result",
+                              "size": 1
+                            },
+                            {
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/nrf_802154_core.c/m_ed_time_left",
+                              "name": "m_ed_time_left",
+                              "size": 4
+                            },
+                            {
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/nrf_802154_core.c/m_flags",
+                              "name": "m_flags",
+                              "size": 1
+                            },
+                            {
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/nrf_802154_core.c/m_rsch_timeslot_is_granted",
+                              "name": "m_rsch_timeslot_is_granted",
+                              "size": 1
+                            },
+                            {
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/nrf_802154_core.c/m_state",
+                              "name": "m_state",
+                              "size": 1
+                            },
+                            {
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/nrf_802154_core.c/mp_ack",
+                              "name": "mp_ack",
+                              "size": 4
+                            },
+                            {
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/nrf_802154_core.c/mp_current_rx_buffer",
+                              "name": "mp_current_rx_buffer",
+                              "size": 4
+                            },
+                            {
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/nrf_802154_core.c/mp_tx_data",
+                              "name": "mp_tx_data",
+                              "size": 4
+                            }
+                          ],
+                          "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/nrf_802154_core.c",
+                          "name": "nrf_802154_core.c",
+                          "size": 20
+                        },
+                        {
+                          "children": [
+                            {
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/nrf_802154_critical_section.c/m_critical_section_monitor",
+                              "name": "m_critical_section_monitor",
+                              "size": 1
+                            },
+                            {
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/nrf_802154_critical_section.c/m_nested_critical_section_allowed_priority",
+                              "name": "m_nested_critical_section_allowed_priority",
+                              "size": 1
+                            },
+                            {
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/nrf_802154_critical_section.c/m_nested_critical_section_counter",
+                              "name": "m_nested_critical_section_counter",
+                              "size": 1
+                            }
+                          ],
+                          "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/nrf_802154_critical_section.c",
+                          "name": "nrf_802154_critical_section.c",
+                          "size": 3
+                        },
+                        {
+                          "children": [
+                            {
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/nrf_802154_pib.c/m_data",
+                              "name": "m_data",
+                              "size": 18
+                            }
+                          ],
+                          "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/nrf_802154_pib.c",
+                          "name": "nrf_802154_pib.c",
+                          "size": 18
+                        },
+                        {
+                          "children": [
+                            {
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/nrf_802154_timer_coord.c/m_drift",
+                              "name": "m_drift",
+                              "size": 4
+                            },
+                            {
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/nrf_802154_timer_coord.c/m_drift_known",
+                              "name": "m_drift_known",
+                              "size": 1
+                            },
+                            {
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/nrf_802154_timer_coord.c/m_last_sync",
+                              "name": "m_last_sync",
+                              "size": 8
+                            },
+                            {
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/nrf_802154_timer_coord.c/m_synchronized",
+                              "name": "m_synchronized",
+                              "size": 1
+                            }
+                          ],
+                          "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/nrf_802154_timer_coord.c",
+                          "name": "nrf_802154_timer_coord.c",
+                          "size": 14
+                        },
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features/nrf_802154_csma_ca.c/m_be",
+                                  "name": "m_be",
+                                  "size": 1
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features/nrf_802154_csma_ca.c/m_is_running",
+                                  "name": "m_is_running",
+                                  "size": 1
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features/nrf_802154_csma_ca.c/m_nb",
+                                  "name": "m_nb",
+                                  "size": 1
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features/nrf_802154_csma_ca.c/m_timer",
+                                  "name": "m_timer",
+                                  "size": 20
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features/nrf_802154_csma_ca.c/mp_data",
+                                  "name": "mp_data",
+                                  "size": 4
+                                }
+                              ],
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features/nrf_802154_csma_ca.c",
+                              "name": "nrf_802154_csma_ca.c",
+                              "size": 27
+                            },
+                            {
+                              "children": [
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features/nrf_802154_precise_ack_timeout.c/m_timer",
+                                  "name": "m_timer",
+                                  "size": 20
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features/nrf_802154_precise_ack_timeout.c/m_procedure_is_active",
+                                  "name": "m_procedure_is_active",
+                                  "size": 1
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features/nrf_802154_precise_ack_timeout.c/mp_frame",
+                                  "name": "mp_frame",
+                                  "size": 4
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features/nrf_802154_precise_ack_timeout.c/m_timeout",
+                                  "name": "m_timeout",
+                                  "size": 4
+                                }
+                              ],
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features/nrf_802154_precise_ack_timeout.c",
+                              "name": "nrf_802154_precise_ack_timeout.c",
+                              "size": 29
+                            },
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features/ack_generator/nrf_802154_ack_data.c/m_ie",
+                                      "name": "m_ie",
+                                      "size": 456
+                                    },
+                                    {
+                                      "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features/ack_generator/nrf_802154_ack_data.c/m_pending_bit",
+                                      "name": "m_pending_bit",
+                                      "size": 172
+                                    },
+                                    {
+                                      "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features/ack_generator/nrf_802154_ack_data.c/m_src_matching_method",
+                                      "name": "m_src_matching_method",
+                                      "size": 1
+                                    }
+                                  ],
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features/ack_generator/nrf_802154_ack_data.c",
+                                  "name": "nrf_802154_ack_data.c",
+                                  "size": 629
+                                },
+                                {
+                                  "children": [
+                                    {
+                                      "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features/ack_generator/nrf_802154_enh_ack_generator.c/m_ack_data",
+                                      "name": "m_ack_data",
+                                      "size": 128
+                                    }
+                                  ],
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features/ack_generator/nrf_802154_enh_ack_generator.c",
+                                  "name": "nrf_802154_enh_ack_generator.c",
+                                  "size": 128
+                                },
+                                {
+                                  "children": [
+                                    {
+                                      "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features/ack_generator/nrf_802154_imm_ack_generator.c/m_ack_data",
+                                      "name": "m_ack_data",
+                                      "size": 6
+                                    }
+                                  ],
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features/ack_generator/nrf_802154_imm_ack_generator.c",
+                                  "name": "nrf_802154_imm_ack_generator.c",
+                                  "size": 6
+                                }
+                              ],
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features/ack_generator",
+                              "name": "ack_generator",
+                              "size": 763
+                            },
+                            {
+                              "children": [
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features/nrf_802154_delayed_trx.c/m_dly_op_state",
+                                  "name": "m_dly_op_state",
+                                  "size": 2
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features/nrf_802154_delayed_trx.c/m_dly_rx_frame",
+                                  "name": "m_dly_rx_frame",
+                                  "size": 8
+                                }
+                              ],
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features/nrf_802154_delayed_trx.c",
+                              "name": "nrf_802154_delayed_trx.c",
+                              "size": 10
+                            }
+                          ],
+                          "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/mac_features",
+                          "name": "mac_features",
+                          "size": 829
+                        },
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/platform/clock/nrf_802154_clock_zephyr.c/hfclk_is_running",
+                                      "name": "hfclk_is_running",
+                                      "size": 1
+                                    },
+                                    {
+                                      "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/platform/clock/nrf_802154_clock_zephyr.c/lfclk_is_running",
+                                      "name": "lfclk_is_running",
+                                      "size": 1
+                                    }
+                                  ],
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/platform/clock/nrf_802154_clock_zephyr.c",
+                                  "name": "nrf_802154_clock_zephyr.c",
+                                  "size": 2
+                                }
+                              ],
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/platform/clock",
+                              "name": "clock",
+                              "size": 2
+                            },
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/platform/hp_timer/nrf_802154_hp_timer.c/m_unexpected_sync",
+                                      "name": "m_unexpected_sync",
+                                      "size": 4
+                                    }
+                                  ],
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/platform/hp_timer/nrf_802154_hp_timer.c",
+                                  "name": "nrf_802154_hp_timer.c",
+                                  "size": 4
+                                }
+                              ],
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/platform/hp_timer",
+                              "name": "hp_timer",
+                              "size": 4
+                            },
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/platform/lp_timer/nrf_802154_lp_timer.c/m_clock_ready",
+                                      "name": "m_clock_ready",
+                                      "size": 1
+                                    },
+                                    {
+                                      "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/platform/lp_timer/nrf_802154_lp_timer.c/m_lp_timer_irq_enabled",
+                                      "name": "m_lp_timer_irq_enabled",
+                                      "size": 4
+                                    },
+                                    {
+                                      "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/platform/lp_timer/nrf_802154_lp_timer.c/m_mutex",
+                                      "name": "m_mutex",
+                                      "size": 1
+                                    },
+                                    {
+                                      "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/platform/lp_timer/nrf_802154_lp_timer.c/m_offset_counter",
+                                      "name": "m_offset_counter",
+                                      "size": 4
+                                    },
+                                    {
+                                      "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/platform/lp_timer/nrf_802154_lp_timer.c/m_shall_fire_immediately",
+                                      "name": "m_shall_fire_immediately",
+                                      "size": 1
+                                    },
+                                    {
+                                      "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/platform/lp_timer/nrf_802154_lp_timer.c/m_target_times",
+                                      "name": "m_target_times",
+                                      "size": 16
+                                    }
+                                  ],
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/platform/lp_timer/nrf_802154_lp_timer.c",
+                                  "name": "nrf_802154_lp_timer.c",
+                                  "size": 27
+                                }
+                              ],
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/platform/lp_timer",
+                              "name": "lp_timer",
+                              "size": 27
+                            },
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/platform/random/nrf_802154_random_zephyr.c/s",
+                                      "name": "s",
+                                      "size": 16
+                                    }
+                                  ],
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/platform/random/nrf_802154_random_zephyr.c",
+                                  "name": "nrf_802154_random_zephyr.c",
+                                  "size": 16
+                                }
+                              ],
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/platform/random",
+                              "name": "random",
+                              "size": 16
+                            }
+                          ],
+                          "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/platform",
+                          "name": "platform",
+                          "size": 49
+                        },
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/rsch/nrf_802154_rsch.c/m_approved_prios",
+                                  "name": "m_approved_prios",
+                                  "size": 3
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/rsch/nrf_802154_rsch.c/m_cont_mode_prio",
+                                  "name": "m_cont_mode_prio",
+                                  "size": 1
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/rsch/nrf_802154_rsch.c/m_dly_ts",
+                                  "name": "m_dly_ts",
+                                  "size": 64
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/rsch/nrf_802154_rsch.c/m_last_notified_prio",
+                                  "name": "m_last_notified_prio",
+                                  "size": 1
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/rsch/nrf_802154_rsch.c/m_ntf_mutex",
+                                  "name": "m_ntf_mutex",
+                                  "size": 1
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/rsch/nrf_802154_rsch.c/m_ntf_mutex_monitor",
+                                  "name": "m_ntf_mutex_monitor",
+                                  "size": 1
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/rsch/nrf_802154_rsch.c/m_req_mutex",
+                                  "name": "m_req_mutex",
+                                  "size": 1
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/rsch/nrf_802154_rsch.c/m_req_mutex_monitor",
+                                  "name": "m_req_mutex_monitor",
+                                  "size": 1
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/rsch/nrf_802154_rsch.c/m_requested_prio",
+                                  "name": "m_requested_prio",
+                                  "size": 1
+                                }
+                              ],
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/rsch/nrf_802154_rsch.c",
+                              "name": "nrf_802154_rsch.c",
+                              "size": 74
+                            },
+                            {
+                              "children": [
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/rsch/nrf_802154_rsch_crit_sect.c/m_rsch_pending_evt",
+                                  "name": "m_rsch_pending_evt",
+                                  "size": 1
+                                }
+                              ],
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/rsch/nrf_802154_rsch_crit_sect.c",
+                              "name": "nrf_802154_rsch_crit_sect.c",
+                              "size": 1
+                            },
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/rsch/raal/single_phy/single_phy.c/m_continuous",
+                                          "name": "m_continuous",
+                                          "size": 1
+                                        }
+                                      ],
+                                      "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/rsch/raal/single_phy/single_phy.c",
+                                      "name": "single_phy.c",
+                                      "size": 1
+                                    }
+                                  ],
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/rsch/raal/single_phy",
+                                  "name": "single_phy",
+                                  "size": 1
+                                }
+                              ],
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/rsch/raal",
+                              "name": "raal",
+                              "size": 1
+                            }
+                          ],
+                          "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/rsch",
+                          "name": "rsch",
+                          "size": 76
+                        },
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/timer_scheduler/nrf_802154_timer_sched.c/m_fired_mutex",
+                                  "name": "m_fired_mutex",
+                                  "size": 1
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/timer_scheduler/nrf_802154_timer_sched.c/m_queue_changed_cntr",
+                                  "name": "m_queue_changed_cntr",
+                                  "size": 1
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/timer_scheduler/nrf_802154_timer_sched.c/m_timer_mutex",
+                                  "name": "m_timer_mutex",
+                                  "size": 1
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/timer_scheduler/nrf_802154_timer_sched.c/mp_head",
+                                  "name": "mp_head",
+                                  "size": 4
+                                }
+                              ],
+                              "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/timer_scheduler/nrf_802154_timer_sched.c",
+                              "name": "nrf_802154_timer_sched.c",
+                              "size": 7
+                            }
+                          ],
+                          "identifier": "modules/hal/nordic/drivers/nrf_radio_802154/timer_scheduler",
+                          "name": "timer_scheduler",
+                          "size": 7
+                        }
+                      ],
+                      "identifier": "modules/hal/nordic/drivers/nrf_radio_802154",
+                      "name": "nrf_radio_802154",
+                      "size": 1016
+                    }
+                  ],
+                  "identifier": "modules/hal/nordic/drivers",
+                  "name": "drivers",
+                  "size": 1016
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "identifier": "modules/hal/nordic/nrfx/drivers/src/nrfx_clock.c/m_clock_cb",
+                                  "name": "m_clock_cb",
+                                  "size": 8
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/nrfx/drivers/src/nrfx_clock.c/nrfx_clock_irq_enabled",
+                                  "name": "nrfx_clock_irq_enabled",
+                                  "size": 1
+                                }
+                              ],
+                              "identifier": "modules/hal/nordic/nrfx/drivers/src/nrfx_clock.c",
+                              "name": "nrfx_clock.c",
+                              "size": 9
+                            },
+                            {
+                              "children": [
+                                {
+                                  "identifier": "modules/hal/nordic/nrfx/drivers/src/nrfx_power.c/m_pofwarn_handler",
+                                  "name": "m_pofwarn_handler",
+                                  "size": 4
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/nrfx/drivers/src/nrfx_power.c/m_sleepevt_handler",
+                                  "name": "m_sleepevt_handler",
+                                  "size": 4
+                                },
+                                {
+                                  "identifier": "modules/hal/nordic/nrfx/drivers/src/nrfx_power.c/m_usbevt_handler",
+                                  "name": "m_usbevt_handler",
+                                  "size": 4
+                                }
+                              ],
+                              "identifier": "modules/hal/nordic/nrfx/drivers/src/nrfx_power.c",
+                              "name": "nrfx_power.c",
+                              "size": 12
+                            }
+                          ],
+                          "identifier": "modules/hal/nordic/nrfx/drivers/src",
+                          "name": "src",
+                          "size": 21
+                        }
+                      ],
+                      "identifier": "modules/hal/nordic/nrfx/drivers",
+                      "name": "drivers",
+                      "size": 21
+                    }
+                  ],
+                  "identifier": "modules/hal/nordic/nrfx",
+                  "name": "nrfx",
+                  "size": 21
+                }
+              ],
+              "identifier": "modules/hal/nordic",
+              "name": "nordic",
+              "size": 1037
+            }
+          ],
+          "identifier": "modules/hal",
+          "name": "hal",
+          "size": 1037
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "identifier": "modules/crypto/mbedtls/zephyr_init.c/_mbedtls_heap",
+                      "name": "_mbedtls_heap",
+                      "size": 512
+                    }
+                  ],
+                  "identifier": "modules/crypto/mbedtls/zephyr_init.c",
+                  "name": "zephyr_init.c",
+                  "size": 512
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "identifier": "modules/crypto/mbedtls/library/memory_buffer_alloc.c/heap",
+                          "name": "heap",
+                          "size": 20
+                        }
+                      ],
+                      "identifier": "modules/crypto/mbedtls/library/memory_buffer_alloc.c",
+                      "name": "memory_buffer_alloc.c",
+                      "size": 20
+                    },
+                    {
+                      "children": [
+                        {
+                          "identifier": "modules/crypto/mbedtls/library/platform.c/mbedtls_calloc_func",
+                          "name": "mbedtls_calloc_func",
+                          "size": 4
+                        },
+                        {
+                          "identifier": "modules/crypto/mbedtls/library/platform.c/mbedtls_free_func",
+                          "name": "mbedtls_free_func",
+                          "size": 4
+                        }
+                      ],
+                      "identifier": "modules/crypto/mbedtls/library/platform.c",
+                      "name": "platform.c",
+                      "size": 8
+                    },
+                    {
+                      "children": [
+                        {
+                          "identifier": "modules/crypto/mbedtls/library/platform_util.c/memset_func",
+                          "name": "memset_func",
+                          "size": 4
+                        }
+                      ],
+                      "identifier": "modules/crypto/mbedtls/library/platform_util.c",
+                      "name": "platform_util.c",
+                      "size": 4
+                    }
+                  ],
+                  "identifier": "modules/crypto/mbedtls/library",
+                  "name": "library",
+                  "size": 32
+                }
+              ],
+              "identifier": "modules/crypto/mbedtls",
+              "name": "mbedtls",
+              "size": 544
+            }
+          ],
+          "identifier": "modules/crypto",
+          "name": "crypto",
+          "size": 544
+        }
+      ],
+      "identifier": "modules",
+      "name": "modules",
+      "size": 2621
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "identifier": "arch/arm/core/aarch32/cortex_m/mpu/arm_mpu.c/static_regions_num",
+                                  "name": "static_regions_num",
+                                  "size": 1
+                                }
+                              ],
+                              "identifier": "arch/arm/core/aarch32/cortex_m/mpu/arm_mpu.c",
+                              "name": "arm_mpu.c",
+                              "size": 1
+                            },
+                            {
+                              "children": [
+                                {
+                                  "identifier": "arch/arm/core/aarch32/cortex_m/mpu/arm_core_mpu.c/log_dynamic_mpu",
+                                  "name": "log_dynamic_mpu",
+                                  "size": 4
+                                }
+                              ],
+                              "identifier": "arch/arm/core/aarch32/cortex_m/mpu/arm_core_mpu.c",
+                              "name": "arm_core_mpu.c",
+                              "size": 4
+                            }
+                          ],
+                          "identifier": "arch/arm/core/aarch32/cortex_m/mpu",
+                          "name": "mpu",
+                          "size": 5
+                        }
+                      ],
+                      "identifier": "arch/arm/core/aarch32/cortex_m",
+                      "name": "cortex_m",
+                      "size": 5
+                    }
+                  ],
+                  "identifier": "arch/arm/core/aarch32",
+                  "name": "aarch32",
+                  "size": 5
+                }
+              ],
+              "identifier": "arch/arm/core",
+              "name": "core",
+              "size": 5
+            }
+          ],
+          "identifier": "arch/arm",
+          "name": "arm",
+          "size": 5
+        }
+      ],
+      "identifier": "arch",
+      "name": "arch",
+      "size": 5
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "identifier": "lib/libc/newlib/libc-hooks.c/heap_sem",
+                      "name": "heap_sem",
+                      "size": 24
+                    },
+                    {
+                      "identifier": "lib/libc/newlib/libc-hooks.c/heap_sz",
+                      "name": "heap_sz",
+                      "size": 4
+                    },
+                    {
+                      "identifier": "lib/libc/newlib/libc-hooks.c/_stdin_hook",
+                      "name": "_stdin_hook",
+                      "size": 4
+                    },
+                    {
+                      "identifier": "lib/libc/newlib/libc-hooks.c/_stdout_hook",
+                      "name": "_stdout_hook",
+                      "size": 4
+                    }
+                  ],
+                  "identifier": "lib/libc/newlib/libc-hooks.c",
+                  "name": "libc-hooks.c",
+                  "size": 36
+                }
+              ],
+              "identifier": "lib/libc/newlib",
+              "name": "newlib",
+              "size": 36
+            }
+          ],
+          "identifier": "lib/libc",
+          "name": "libc",
+          "size": 36
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "identifier": "lib/os/fdtable.c/fdtable_lock",
+                  "name": "fdtable_lock",
+                  "size": 20
+                }
+              ],
+              "identifier": "lib/os/fdtable.c",
+              "name": "fdtable.c",
+              "size": 20
+            },
+            {
+              "children": [
+                {
+                  "identifier": "lib/os/printk.c/_char_out",
+                  "name": "_char_out",
+                  "size": 4
+                }
+              ],
+              "identifier": "lib/os/printk.c",
+              "name": "printk.c",
+              "size": 4
+            }
+          ],
+          "identifier": "lib/os",
+          "name": "os",
+          "size": 24
+        }
+      ],
+      "identifier": "lib",
+      "name": "lib",
+      "size": 60
+    },
+    {
+      "identifier": ":/buf.12792",
+      "name": "buf.12792",
+      "size": 120
+    },
+    {
+      "identifier": ":/i.12793",
+      "name": "i.12793",
+      "size": 4
+    },
+    {
+      "identifier": ":/buf.14769",
+      "name": "buf.14769",
+      "size": 24
+    },
+    {
+      "identifier": ":/dev.12682",
+      "name": "dev.12682",
+      "size": 4
+    },
+    {
+      "identifier": ":/tx_job.13457",
+      "name": "tx_job.13457",
+      "size": 12
+    },
+    {
+      "identifier": ":/gpio_initialized.10090",
+      "name": "gpio_initialized.10090",
+      "size": 1
+    },
+    {
+      "identifier": ":/poll_out_lock.10143",
+      "name": "poll_out_lock.10143",
+      "size": 4
+    },
+    {
+      "identifier": ":/exiting_crit_sect.7260",
+      "name": "exiting_crit_sect.7260",
+      "size": 1
+    },
+    {
+      "identifier": ":/cli.9487",
+      "name": "cli.9487",
+      "size": 16
+    },
+    {
+      "identifier": ":/cli.9507",
+      "name": "cli.9507",
+      "size": 16
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "identifier": "kernel/init.c/z_idle_stacks",
+              "name": "z_idle_stacks",
+              "size": 320
+            },
+            {
+              "identifier": "kernel/init.c/z_sys_post_kernel",
+              "name": "z_sys_post_kernel",
+              "size": 1
+            },
+            {
+              "identifier": "kernel/init.c/log_dynamic_os",
+              "name": "log_dynamic_os",
+              "size": 4
+            },
+            {
+              "identifier": "kernel/init.c/z_main_stack",
+              "name": "z_main_stack",
+              "size": 2048
+            }
+          ],
+          "identifier": "kernel/init.c",
+          "name": "init.c",
+          "size": 2373
+        },
+        {
+          "children": [
+            {
+              "identifier": "kernel/mem_slab.c/lock",
+              "name": "lock",
+              "size": 1
+            }
+          ],
+          "identifier": "kernel/mem_slab.c",
+          "name": "mem_slab.c",
+          "size": 1
+        },
+        {
+          "children": [
+            {
+              "identifier": "kernel/mutex.c/lock",
+              "name": "lock",
+              "size": 1
+            }
+          ],
+          "identifier": "kernel/mutex.c",
+          "name": "mutex.c",
+          "size": 1
+        },
+        {
+          "children": [
+            {
+              "identifier": "kernel/sem.c/lock",
+              "name": "lock",
+              "size": 1
+            }
+          ],
+          "identifier": "kernel/sem.c",
+          "name": "sem.c",
+          "size": 1
+        },
+        {
+          "children": [
+            {
+              "identifier": "kernel/poll.c/lock",
+              "name": "lock",
+              "size": 1
+            }
+          ],
+          "identifier": "kernel/poll.c",
+          "name": "poll.c",
+          "size": 1
+        },
+        {
+          "children": [
+            {
+              "identifier": "kernel/sched.c/pending_current",
+              "name": "pending_current",
+              "size": 4
+            },
+            {
+              "identifier": "kernel/sched.c/sched_spinlock",
+              "name": "sched_spinlock",
+              "size": 1
+            },
+            {
+              "identifier": "kernel/sched.c/slice_max_prio",
+              "name": "slice_max_prio",
+              "size": 4
+            },
+            {
+              "identifier": "kernel/sched.c/slice_time",
+              "name": "slice_time",
+              "size": 4
+            }
+          ],
+          "identifier": "kernel/sched.c",
+          "name": "sched.c",
+          "size": 13
+        },
+        {
+          "children": [
+            {
+              "identifier": "kernel/timeout.c/announce_remaining",
+              "name": "announce_remaining",
+              "size": 4
+            },
+            {
+              "identifier": "kernel/timeout.c/curr_tick",
+              "name": "curr_tick",
+              "size": 8
+            },
+            {
+              "identifier": "kernel/timeout.c/timeout_list",
+              "name": "timeout_list",
+              "size": 8
+            }
+          ],
+          "identifier": "kernel/timeout.c",
+          "name": "timeout.c",
+          "size": 20
+        },
+        {
+          "children": [
+            {
+              "identifier": "kernel/mempool.c/poolheap__heap_mem_pool",
+              "name": "poolheap__heap_mem_pool",
+              "size": 24
+            },
+            {
+              "identifier": "kernel/mempool.c/kheap_poolheap__heap_mem_pool",
+              "name": "kheap_poolheap__heap_mem_pool",
+              "size": 2364
+            },
+            {
+              "identifier": "kernel/mempool.c/_heap_mem_pool",
+              "name": "_heap_mem_pool",
+              "size": 4
+            }
+          ],
+          "identifier": "kernel/mempool.c",
+          "name": "mempool.c",
+          "size": 2392
+        },
+        {
+          "children": [
+            {
+              "identifier": "kernel/system_work_q.c/sys_work_q_stack",
+              "name": "sys_work_q_stack",
+              "size": 2048
+            }
+          ],
+          "identifier": "kernel/system_work_q.c",
+          "name": "system_work_q.c",
+          "size": 2048
+        }
+      ],
+      "identifier": "kernel",
+      "name": "kernel",
+      "size": 6850
+    },
+    {
+      "identifier": ":/_ZN2ot3CliL14sCliConsoleRawE",
+      "name": "_ZN2ot3CliL14sCliConsoleRawE",
+      "size": 240
+    },
+    {
+      "identifier": ":/impure_data",
+      "name": "impure_data",
+      "size": 96
+    },
+    {
+      "identifier": ":/_ZN2ot13RandomManager8sEntropyE",
+      "name": "_ZN2ot13RandomManager8sEntropyE",
+      "size": 136
+    },
+    {
+      "identifier": ":/nrf_802154_rx_buffers",
+      "name": "nrf_802154_rx_buffers",
+      "size": 1032
+    },
+    {
+      "identifier": ":/errno",
+      "name": "errno",
+      "size": 4
+    },
+    {
+      "identifier": ":/z_interrupt_stacks",
+      "name": "z_interrupt_stacks",
+      "size": 2048
+    },
+    {
+      "identifier": ":/_impure_ptr",
+      "name": "_impure_ptr",
+      "size": 4
+    },
+    {
+      "identifier": ":/__malloc_sbrk_start",
+      "name": "__malloc_sbrk_start",
+      "size": 4
+    },
+    {
+      "identifier": ":/conn_mgr_lock",
+      "name": "conn_mgr_lock",
+      "size": 24
+    },
+    {
+      "identifier": ":/settings_handlers",
+      "name": "settings_handlers",
+      "size": 8
+    },
+    {
+      "identifier": ":/_ZN2ot7Message8Settings8kDefaultE",
+      "name": "_ZN2ot7Message8Settings8kDefaultE",
+      "size": 2
+    },
+    {
+      "identifier": ":/_sw_isr_table",
+      "name": "_sw_isr_table",
+      "size": 384
+    },
+    {
+      "identifier": ":/settings_save_dst",
+      "name": "settings_save_dst",
+      "size": 4
+    },
+    {
+      "identifier": ":/z_main_thread",
+      "name": "z_main_thread",
+      "size": 184
+    },
+    {
+      "identifier": ":/_ZN2ot12gInstanceRawE",
+      "name": "_ZN2ot12gInstanceRawE",
+      "size": 23424
+    },
+    {
+      "identifier": ":/_ZN2ot13RandomManager5sPrngE",
+      "name": "_ZN2ot13RandomManager5sPrngE",
+      "size": 4
+    },
+    {
+      "identifier": ":/_ZN2ot13RandomManager10sInitCountE",
+      "name": "_ZN2ot13RandomManager10sInitCountE",
+      "size": 2
+    },
+    {
+      "identifier": ":/SystemCoreClock",
+      "name": "SystemCoreClock",
+      "size": 4
+    },
+    {
+      "identifier": ":/mbedtls_exit",
+      "name": "mbedtls_exit",
+      "size": 4
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "identifier": "samples/net/sockets/coap_client/src/coap-client.c/log_dynamic_net_echo_client_sample",
+                              "name": "log_dynamic_net_echo_client_sample",
+                              "size": 4
+                            }
+                          ],
+                          "identifier": "samples/net/sockets/coap_client/src/coap-client.c",
+                          "name": "coap-client.c",
+                          "size": 4
+                        }
+                      ],
+                      "identifier": "samples/net/sockets/coap_client/src",
+                      "name": "src",
+                      "size": 4
+                    }
+                  ],
+                  "identifier": "samples/net/sockets/coap_client",
+                  "name": "coap_client",
+                  "size": 4
+                }
+              ],
+              "identifier": "samples/net/sockets",
+              "name": "sockets",
+              "size": 4
+            }
+          ],
+          "identifier": "samples/net",
+          "name": "net",
+          "size": 4
+        }
+      ],
+      "identifier": "samples",
+      "name": "samples",
+      "size": 4
+    },
+    {
+      "identifier": ":/_kernel",
+      "name": "_kernel",
+      "size": 52
+    },
+    {
+      "identifier": ":/_SEGGER_RTT",
+      "name": "_SEGGER_RTT",
+      "size": 168
+    },
+    {
+      "identifier": ":/_ZN2ot13RandomManager8sCtrDrbgE",
+      "name": "_ZN2ot13RandomManager8sCtrDrbgE",
+      "size": 320
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "identifier": "soc/arm/nordic_nrf/nrf52/soc.c/log_dynamic_soc",
+                          "name": "log_dynamic_soc",
+                          "size": 4
+                        }
+                      ],
+                      "identifier": "soc/arm/nordic_nrf/nrf52/soc.c",
+                      "name": "soc.c",
+                      "size": 4
+                    }
+                  ],
+                  "identifier": "soc/arm/nordic_nrf/nrf52",
+                  "name": "nrf52",
+                  "size": 4
+                }
+              ],
+              "identifier": "soc/arm/nordic_nrf",
+              "name": "nordic_nrf",
+              "size": 4
+            }
+          ],
+          "identifier": "soc/arm",
+          "name": "arm",
+          "size": 4
+        }
+      ],
+      "identifier": "soc",
+      "name": "soc",
+      "size": 4
+    },
+    {
+      "identifier": ":/z_idle_threads",
+      "name": "z_idle_threads",
+      "size": 184
+    },
+    {
+      "identifier": ":/k_sys_work_q",
+      "name": "k_sys_work_q",
+      "size": 216
+    },
+    {
+      "identifier": ":/rtt_term_mutex",
+      "name": "rtt_term_mutex",
+      "size": 20
+    },
+    {
+      "identifier": ":/settings_load_srcs",
+      "name": "settings_load_srcs",
+      "size": 8
+    },
+    {
+      "identifier": ":/_ZN2ot3Cli6Server7sServerE",
+      "name": "_ZN2ot3Cli6Server7sServerE",
+      "size": 4
+    },
+    {
+      "identifier": ":/_ZN2ot3Cli7Dataset8sDatasetE",
+      "name": "_ZN2ot3Cli7Dataset8sDatasetE",
+      "size": 104
+    },
+    {
+      "identifier": ":/__malloc_free_list",
+      "name": "__malloc_free_list",
+      "size": 4
+    },
+    {
+      "identifier": ":/net_stats",
+      "name": "net_stats",
+      "size": 88
+    }
+  ],
+  "identifier": ":",
+  "name": "root",
+  "size": 29062
+}

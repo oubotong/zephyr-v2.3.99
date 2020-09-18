@@ -1,0 +1,99 @@
+The target system is: Generic - 2.3.99 - arm
+The host system is: Linux - 5.4.0-42-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/dafran/zephyr-sdk-0.11.3/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is GNU, found in "/home/dafran/test/zephyr/samples/net/sockets/coap_client/build/CMakeFiles/3.18.2/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /home/dafran/zephyr-sdk-0.11.3/arm-zephyr-eabi/bin/arm-zephyr-eabi-g++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+The CXX compiler identification is GNU, found in "/home/dafran/test/zephyr/samples/net/sockets/coap_client/build/CMakeFiles/3.18.2/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+arm-zephyr-eabi-gcc (crosstool-NG 1.24.0.37-3f461da-dirty) 9.2.0
+Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/dafran/test/zephyr/samples/net/sockets/coap_client/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_ed8e4 && [1/2] Building C object CMakeFiles/cmTC_ed8e4.dir/CheckIncludeFile.c.obj
+[2/2] Linking C static library libcmTC_ed8e4.a
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/dafran/test/zephyr/samples/net/sockets/coap_client/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_56421 && [1/2] Building C object CMakeFiles/cmTC_56421.dir/CheckIncludeFile.c.obj
+[2/2] Linking C static library libcmTC_56421.a
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/dafran/test/zephyr/samples/net/sockets/coap_client/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_8fa5b && [1/2] Building C object CMakeFiles/cmTC_8fa5b.dir/CheckIncludeFile.c.obj
+[2/2] Linking C static library libcmTC_8fa5b.a
+
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /home/dafran/test/zephyr/samples/net/sockets/coap_client/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_95c3e && [1/2] Building C object CMakeFiles/cmTC_95c3e.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.obj
+[2/2] Linking C static library libcmTC_95c3e.a
+
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/dafran/test/zephyr/samples/net/sockets/coap_client/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_5c6c5 && [1/2] Building C object CMakeFiles/cmTC_5c6c5.dir/TestEndianess.c.obj
+[2/2] Linking C static library libcmTC_5c6c5.a
+
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+

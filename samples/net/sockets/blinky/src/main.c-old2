@@ -1,0 +1,261 @@
+/*
+ * Copyright (c) 2016 Intel Corporation
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+#include <zephyr.h>
+#include <stdio.h>
+#include <device.h>
+#include <devicetree.h>
+#include <drivers/gpio.h>
+#include <string.h>
+
+
+#include <openthread/config.h>
+#include <openthread/dataset_ftd.h>
+#include <openthread/cli.h>
+#include <openthread/diag.h>
+#include <openthread/tasklet.h>
+#include <openthread/instance.h>
+#include <openthread/thread.h>
+#include <openthread/thread_ftd.h>
+#include <openthread/cli_config.h>
+
+#include <openthread/ip6.h>
+#include <openthread/mqttsn.h>
+#include <openthread/dataset.h>
+#include <openthread/link.h>
+#include <openthread-system.h>
+
+#define GATEWAY_PORT 47193
+#define GATEWAY_ADDRESS "fd11:22::1637:7871:d626:bf3e"
+
+#define CLIENT_ID "NRF52840"
+#define CLIENT_PORT 47193
+
+static void HandleConnected(otMqttsnReturnCode aCode, void* aContext);
+static void HandleDisconnected(otMqttsnDisconnectType aType, void* aContext);
+static void MqttsnConnect(otInstance *instance);
+static void setNetworkConfiguration(otInstance *aInstance);
+void handleNetifStateChanged(uint32_t aFlags, void *aContext);
+
+
+int main(int argc, char *argv[])
+{
+    otSysInit(argc, argv);
+    otInstance *instance;
+
+    printf("begin to connect!!\n");
+
+
+    instance = otInstanceInitSingle();
+    printf("single instance!!\n");
+
+
+    otSetStateChangedCallback(instance, handleNetifStateChanged, instance);
+    
+    setNetworkConfiguration(instance);
+
+    otIp6SetEnabled(instance, true);
+    printf("ifconfig up!!\n");
+
+    otThreadSetEnabled(instance, true);
+
+    printf("thread start!!\n");
+
+   
+    while (1)
+    {
+        otTaskletsProcess(instance);
+        otSysProcessDrivers(instance);
+    }
+
+    otInstanceFinalize(instance);
+
+
+    return 0;
+}
+
+void handleNetifStateChanged(uint32_t aFlags, void *aContext)
+{
+   otInstance *instance = (otInstance *)aContext;
+   if ((aFlags & OT_CHANGED_THREAD_ROLE) != 0)
+   {
+       otDeviceRole changedRole = otThreadGetDeviceRole(aContext);
+
+       switch (changedRole)
+       {
+       case OT_DEVICE_ROLE_LEADER:
+           printf("Leader\n");
+           break;
+
+       case OT_DEVICE_ROLE_ROUTER:
+           printf("Router\n");
+           break;
+       
+       case OT_DEVICE_ROLE_CHILD:
+           printf("Child\n");
+           break;
+       
+       case OT_DEVICE_ROLE_DETACHED:
+           printf("Detached\n");
+	   break;
+       case OT_DEVICE_ROLE_DISABLED:
+           /* Clear LED4 if Thread is not enabled. */
+           printf("Disable\n");
+           break;
+        }
+    }
+
+if (aFlags & OT_CHANGED_THREAD_ROLE)
+    {
+        otDeviceRole role = otThreadGetDeviceRole(instance);
+        // If role changed to any of active roles and MQTT-SN client is not connected then connect
+        if ((role == OT_DEVICE_ROLE_CHILD || role == OT_DEVICE_ROLE_ROUTER)
+            && otMqttsnGetState(instance) == kStateDisconnected)
+        {
+            MqttsnConnect(instance);
+        }
+    }
+
+}
+
+static void HandleConnected(otMqttsnReturnCode aCode, void* aContext)
+{ 
+    printf("Gateway connected\n");
+    OT_UNUSED_VARIABLE(aCode);
+    OT_UNUSED_VARIABLE(aContext);
+    // Handle connected
+}
+
+static void HandleDisconnected(otMqttsnDisconnectType aType, void* aContext)
+{
+    printf("Gateway disconnected\n");
+    OT_UNUSED_VARIABLE(aType);
+    OT_UNUSED_VARIABLE(aContext);
+    // Handle disconnect
+}
+
+static void MqttsnConnect(otInstance *instance)
+{
+    otIp6Address address;
+    otIp6AddressFromString(GATEWAY_ADDRESS, &address);
+
+    // Set MQTT-SN client configuration settings
+    otMqttsnConfig config;
+    config.mClientId = CLIENT_ID;
+    config.mKeepAlive = 30;
+    config.mCleanSession = true;
+    config.mPort = GATEWAY_PORT;
+    config.mAddress = &address;
+    config.mRetransmissionCount = 3;
+    config.mRetransmissionTimeout = 10;
+
+    // Register connected callback
+    otMqttsnSetConnectedHandler(instance, HandleConnected, (void *)instance);
+    // Register disconnected callback
+    otMqttsnSetDisconnectedHandler(instance, HandleDisconnected, (void *)instance);
+    // Connect to the MQTT broker (gateway)
+    otMqttsnConnect(instance, &config);
+}
+
+/**
+ * Override default network settings, such as panid, so the devices can join a network
+ */
+void setNetworkConfiguration(otInstance *aInstance)
+{
+    static char          aNetworkName[] = "OpenThread";
+    otOperationalDataset aDataset;
+
+    memset(&aDataset, 0, sizeof(otOperationalDataset));
+   
+    /*
+     * Fields that can be configured in otOperationDataset to override defaults:
+     *     Network Name, Mesh Local Prefix, Extended PAN ID, PAN ID, Delay Timer,
+     *     Channel, Channel Mask Page 0, Network Master Key, PSKc, Security Policy
+     */
+    aDataset.mActiveTimestamp                      = 1;
+    aDataset.mComponents.mIsActiveTimestampPresent = true;
+     
+    /* Set Channel to 15 */
+    aDataset.mChannel                      = 25;
+    aDataset.mComponents.mIsChannelPresent = true;
+    
+    /* Set Pan ID to 2222 */
+    aDataset.mPanId                      = (otPanId)0xFACE;
+    aDataset.mComponents.mIsPanIdPresent = true;
+
+    /* Set Extended Pan ID to C0DE1AB5C0DE1AB5 */
+    //uint8_t extPanId[OT_EXT_PAN_ID_SIZE] = {0xDE, 0xAD, 0x00, 0xBE, 0xEF, 0x00, 0xCA, 0xFE};
+    //memcpy(aDataset.mExtendedPanId.m8, extPanId, sizeof(aDataset.mExtendedPanId));
+    //aDataset.mComponents.mIsExtendedPanIdPresent = true;
+    
+    /* Set master key to 1234C0DE1AB51234C0DE1AB51234C0DE */
+    //uint8_t key[OT_MASTER_KEY_SIZE] = {0x00, 0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88, 0x99, 0xAA, 0xBB, 0xCC, 0xDD, 0xEE, 0xFF};
+    //memcpy(aDataset.mMasterKey.m8, key, sizeof(aDataset.mMasterKey));
+    //aDataset.mComponents.mIsMasterKeyPresent = true;
+
+    /* Set Network Name to OTCodelab */
+    size_t length = strlen(aNetworkName);
+    memcpy(aDataset.mNetworkName.m8, aNetworkName, length);
+    aDataset.mComponents.mIsNetworkNamePresent = true;
+
+    otDatasetSetActive(aInstance, &aDataset);
+
+    /*otLinkModeConfig mode;
+    memset(&mode, 0, sizeof(mode));
+    mode.mRxOnWhenIdle       = true; 
+    mode.mSecureDataRequests = false;
+    mode.mDeviceType         = true;
+    mode.mNetworkData        = true;
+
+
+    otThreadSetLinkMode(aInstance, mode);*/
+    
+    
+    /* Set the router selection jitter to override the 2 minute default.
+       CLI cmd > routerselectionjitter 20
+       Warning: For demo purposes only - not to be used in a real product */
+    // jitterValue = 20;
+    //otThreadSetRouterSelectionJitter(aInstance, jitterValue);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
